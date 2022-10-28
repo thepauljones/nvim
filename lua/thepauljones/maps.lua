@@ -1,34 +1,53 @@
-local keymap = vim.keymap
+local m = vim.api.nvim_set_keymap
+
+m('n', '<leader>w', ':w<cr>', { noremap = true, silent = true })
+m('n', '<leader>q', ':q<cr>', { noremap = true, silent = true })
+m('n', '<leader>h', ':nohlsearch<cr>', { noremap = true, silent = true })
+m('n', '<leader>fn', ':enew<cr>', { noremap = true, silent = true })
+m('n', '<C-s>', ':w!<cr>', { noremap = true, silent = true })
+m('n', '<C-q>', ':q!<cr>', { noremap = true, silent = true })
+m('n', 'Q', '<Nop>', { noremap = true, silent = true })
+
+
+m('n', '<leader>ps', '<cmd>PackerCompile<cr>', { noremap = true })
+m('n', '<leader>pi', '<cmd>PackerInstall<cr>', { noremap = true })
+m('n', '<leader>ps', '<cmd>PackerSync<cr>', { noremap = true })
+m('n', '<leader>pS', '<cmd>PackerStatus<cr>', { noremap = true })
+m('n', '<leader>pu', '<cmd>PackerUpdate<cr>', { noremap = true })
+
 
 -- Ctrl + h to move to the left window
-vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', { noremap = true })
+m('n', '<C-h>', '<C-w>h', { noremap = true })
 
 -- Ctrl + j to move to the bottom window
-vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', { noremap = true })
+m('n', '<C-j>', '<C-w>j', { noremap = true })
 
 -- Ctrl + k to move to the top window
-vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', { noremap = true })
+m('n', '<C-k>', '<C-w>k', { noremap = true })
 
 -- Ctrl + l to move to the right window
-vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', { noremap = true })
+m('n', '<C-l>', '<C-w>l', { noremap = true })
 
 -- map <leader>vr to reload neovim config
-vim.api.nvim_set_keymap('n', '<leader>vr', ':luafile $MYVIMRC<CR>', { noremap = true })
+m('n', '<leader>vr', ':luafile $MYVIMRC<CR>', { noremap = true })
 
 -- map <leader>e to open Neotree for the current file
-vim.api.nvim_set_keymap('n', '<leader>e', ':Neotree<CR>', { noremap = true })
+m('n', '<leader>e', ':Neotree<CR>', { noremap = true })
 
 -- map <leader>q to close Neotree
-vim.api.nvim_set_keymap('n', '<leader>q', ':q<CR>', { noremap = true })
+m('n', '<leader>q', ':q<CR>', { noremap = true })
 
 -- map <leader>g to open fugitive
-vim.api.nvim_set_keymap('n', '<leader>g', ':Git<CR>', { noremap = true })
+m('n', '<leader>g', ':Git<CR>', { noremap = true })
 
 -- map <leader>ff to open telescope
-vim.api.nvim_set_keymap('n', '<leader>ff', ':Telescope find_files<CR>', { noremap = true })
+m('n', '<leader>ff', ':Telescope find_files<CR>', { noremap = true })
 
--- map <leader>fw to open fzf
-vim.api.nvim_set_keymap('n', '<leader>fw', ':Telescope live_grep<CR>', { noremap = true })
+-- map <leader>fw to open telescope
+m('n', '<leader>fw', ':Telescope live_grep<CR>', { noremap = true })
 
--- map <leader>fb to open fzf
-vim.api.nvim_set_keymap('n', '<leader>fb', ':Telescope buffers<CR>', { noremap = true })
+-- map <leader>fb to open telescope
+m('n', '<leader>fb', ':Telescope buffers<CR>', { noremap = true })
+
+-- map <leader>cp to open copilot panel
+m('n', '<leader>cp', ':Copilot panel<CR>', { noremap = true })

@@ -24,8 +24,11 @@ vim.api.nvim_set_keymap('n', '<leader>q', ':q<CR>', { noremap = true })
 -- map <leader>g to open fugitive
 vim.api.nvim_set_keymap('n', '<leader>g', ':Git<CR>', { noremap = true })
 
--- map <leader>ff to open fzf
-vim.api.nvim_set_keymap('n', '<leader>ff', ':Gfiles<CR>', { noremap = true })
+-- map <leader>ff to open telescope
+vim.api.nvim_set_keymap('n', '<leader>ff', ':Telescope find_files<CR>', { noremap = true })
 
--- map <leader>fa to open fzf
-vim.api.nvim_set_keymap('n', '<leader>ff', ':Files<CR>', { noremap = true })
+-- map <leader>fw to open fzf
+vim.api.nvim_set_keymap('n', '<leader>fw', ':Telescope live_grep<CR>', { noremap = true })
+
+-- map <leader>fb to open fzf
+vim.api.nvim_set_keymap('n', '<leader>fb', ':Telescope buffers<CR>', { noremap = true })

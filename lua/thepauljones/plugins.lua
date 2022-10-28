@@ -47,7 +47,17 @@ packer.startup(function(use)
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
 
-  use 'glepnir/lspsaga.nvim' -- LSP UIs
+  use({
+    "kkharji/lspsaga.nvim",
+    branch = "main",
+    config = function()
+      local saga = require("lspsaga")
+
+      saga.init_lsp_saga({
+        -- your configuration
+      })
+    end,
+  })
   use 'L3MON4D3/LuaSnip'
   use {
     'nvim-treesitter/nvim-treesitter',

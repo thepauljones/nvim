@@ -11,6 +11,8 @@ vim.opt.fileencoding = 'utf-8'
 
 vim.wo.number = true
 
+vim.opt.number = true
+
 vim.opt.title = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
@@ -21,7 +23,6 @@ vim.opt.cmdheight = 1
 vim.opt.laststatus = 2
 vim.opt.expandtab = true
 vim.opt.scrolloff = 10
-vim.opt.shell = 'fish'
 vim.opt.backupskip = { '/tmp/*', '/private/tmp/*' }
 vim.opt.inccommand = 'split'
 vim.opt.ignorecase = true -- Case insensitive searching UNLESS /C or capital in search

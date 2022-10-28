@@ -7,6 +7,11 @@ end
 vim.cmd [[packadd packer.nvim]]
 
 packer.startup(function(use)
+  use {
+    'prettier/vim-prettier',
+    run = 'yarn install',
+    ft = { 'javascript', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'graphql', 'markdown', 'vue', 'html' }
+  }
   use { 'ellisonleao/gruvbox.nvim',
     require("gruvbox").setup({
       undercurl = true,

@@ -45,5 +45,11 @@ vim.api.nvim_create_autocmd("InsertLeave", {
   command = "set nopaste"
 })
 
+-- Run prettier on save
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = '*.js,*.jsx,*.ts,*.tsx,*.css,*.scss,*.html,*.json,*.md',
+  command = "silent! Prettier"
+})
+
 -- Add asterisks in block comments
 vim.opt.formatoptions:append { 'r' }

@@ -15,6 +15,15 @@ m('n', '<leader>ps', '<cmd>PackerSync<cr>', { noremap = true })
 m('n', '<leader>pS', '<cmd>PackerStatus<cr>', { noremap = true })
 m('n', '<leader>pu', '<cmd>PackerUpdate<cr>', { noremap = true })
 
+--Set up Lspsaga keys with <leader>l
+m('n', '<leader>la', '<cmd>Lspsaga code_action<cr>', { noremap = true })
+m('v', '<leader>la', '<cmd>Lspsaga range_code_action<cr>', { noremap = true })
+m('n', '<leader>ld', '<cmd>Lspsaga preview_definition<cr>', { noremap = true })
+m('n', '<leader>lh', '<cmd>Lspsaga hover_doc<cr>', { noremap = true })
+m('n', '<leader>lr', '<cmd>Lspsaga rename<cr>', { noremap = true })
+m('n', '<leader>lf', '<cmd>Lspsaga lsp_finder<cr>', { noremap = true })
+m('n', '<leader>lca', '<cmd>Lspsaga code_action<cr>', { noremap = true })
+
 
 -- Ctrl + h to move to the left window
 m('n', '<C-h>', '<C-w>h', { noremap = true })

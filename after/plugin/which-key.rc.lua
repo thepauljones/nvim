@@ -22,5 +22,7 @@ wk.register({
     r = { "<cmd>Lspsaga rename<cr>", "Rename" },
     f = { "<cmd>Lspsaga lsp_finder<cr>", "Lsp Finder" },
     ca = { "<cmd>Lspsaga code_action<cr>", "Code Action" },
+    cc = { "<cmd>Lspsaga show_cursor_diagnostics<cr>", "Show Cursor Diagnostics" },
+    cd = { "<cmd>Lspsaga show_line_diagnostics<cr>", "Show Line Diagnostics" },
   },
 }, { prefix = "<leader>" })

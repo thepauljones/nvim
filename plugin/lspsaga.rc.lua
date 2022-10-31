@@ -20,7 +20,7 @@ lspsaga.setup { -- defaults ...
   finder_reference_icon = "  ",
   max_preview_lines = 10,
   finder_action_keys = {
-    open = "o",
+    open = "<CR>",
     vsplit = "s",
     split = "i",
     quit = "q",

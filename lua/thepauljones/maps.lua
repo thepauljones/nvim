@@ -60,3 +60,5 @@ m('n', '<leader>fb', ':Telescope buffers<CR>', { noremap = true })
 
 -- map <leader>cp to open copilot panel
 m('n', '<leader>cp', ':Copilot panel<CR>', { noremap = true })
+
+m('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', { noremap = true })

@@ -67,6 +67,11 @@ end)
 vim.keymap.set('n', '<leader>gb', function()
     builtin.git_branches()
 end)
+
+vim.keymap.set('n', '<leader>gc', function()
+    builtin.commands()
+end)
+
 vim.keymap.set("n", "sf", function()
     telescope.extensions.file_browser.file_browser({
         path = "%:p:h",

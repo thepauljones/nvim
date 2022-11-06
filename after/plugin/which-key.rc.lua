@@ -21,6 +21,7 @@ wk.register({
         h = { "<cmd>Lspsaga hover_doc<cr>", "Hover Doc" },
         r = { "<cmd>Lspsaga rename<cr>", "Rename" },
         f = { "<cmd>Lspsaga lsp_finder<cr>", "Lsp Finder" },
+        n = { "<cmd>Lspsaga diagnostic_jump_next<cr>", "Jump next diagnostic" },
         ca = { "<cmd>Lspsaga code_action<cr>", "Code Action" },
         cc = { "<cmd>Lspsaga show_cursor_diagnostics<cr>", "Show Cursor Diagnostics" },
         cd = { "<cmd>Lspsaga show_line_diagnostics<cr>", "Show Line Diagnostics" },

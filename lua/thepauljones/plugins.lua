@@ -12,6 +12,7 @@ packer.startup(function(use)
         run = 'yarn install',
         ft = { 'javascript', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'graphql', 'markdown', 'vue', 'html' }
     }
+    use 'vim-test/vim-test'
     use { 'ellisonleao/gruvbox.nvim',
         require("gruvbox").setup({
             undercurl = true,

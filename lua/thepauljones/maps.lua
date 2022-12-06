@@ -25,6 +25,10 @@ m('n', '<leader>lf', '<cmd>Lspsaga lsp_finder<cr>', { noremap = true })
 m('n', '<leader>lca', '<cmd>Lspsaga code_action<cr>', { noremap = true })
 
 
+--Python silliness
+m('n', '<leader>p', '<cmd>!python3 %<cr>', { noremap = true })
+m('n', '<leader>pt', '<cmd>!pytest %<cr>', { noremap = true })
+
 -- Ctrl + h to move to the left window
 m('n', '<C-h>', '<C-w>h', { noremap = true })
 

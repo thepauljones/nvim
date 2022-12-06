@@ -42,14 +42,14 @@ vim.cmd([[let &t_Ce = "\e[4:0m"]])
 
 -- Turn off paste mode when leaving insert
 vim.api.nvim_create_autocmd("InsertLeave", {
-  pattern = '*',
-  command = "set nopaste"
+	pattern = '*',
+	command = "set nopaste"
 })
 
 -- Run prettier on save
 vim.api.nvim_create_autocmd("BufWritePre", {
-  pattern = '*.js,*.jsx,*.ts,*.tsx,*.css,*.scss,*.html,*.json,*.md',
-  command = "silent! Prettier"
+	pattern = '*.js,*.jsx,*.ts,*.tsx,*.css,*.scss,*.html,*.json,*.md',
+	command = "silent! Prettier"
 })
 
 -- Add asterisks in block comments
